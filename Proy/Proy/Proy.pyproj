@@ -1,0 +1,193 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>Proy</Name>
+    <RootNamespace>Proy</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>28ea8c8f-daac-4f19-8f20-7dc20b2dc49f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>Proy.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="cuentas\admin.py" />
+    <Compile Include="cuentas\apps.py" />
+    <Compile Include="cuentas\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cuentas\migrations\__init__.py" />
+    <Compile Include="cuentas\models.py" />
+    <Compile Include="cuentas\tests.py" />
+    <Compile Include="cuentas\views.py" />
+    <Compile Include="cuentas\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="cuentas\backend.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Proy\__init__.py" />
+    <Compile Include="Proy\settings.py" />
+    <Compile Include="Proy\urls.py" />
+    <Compile Include="Proy\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cuentas\static\content\bootstrap.css" />
+    <Content Include="cuentas\static\content\bootstrap.min.css" />
+    <Content Include="cuentas\static\content\site.css" />
+    <Content Include="cuentas\static\fondo caro 1.jpg" />
+    <Content Include="cuentas\static\fonts\conv\generator_config.txt" />
+    <Content Include="cuentas\static\fonts\conv\opensans-bold-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-bold-webfont.ttf" />
+    <Content Include="cuentas\static\fonts\conv\opensans-bold-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-bold-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-bolditalic-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-bolditalic-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-bolditalic-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-extrabold-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-extrabold-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-extrabold-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-extrabolditalic-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-extrabolditalic-webfont.ttf" />
+    <Content Include="cuentas\static\fonts\conv\opensans-extrabolditalic-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-extrabolditalic-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-italic-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-italic-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-italic-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-light-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-light-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-light-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-lightitalic-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-lightitalic-webfont.ttf" />
+    <Content Include="cuentas\static\fonts\conv\opensans-lightitalic-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-lightitalic-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-regular-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-regular-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-regular-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-semibold-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-semibold-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-semibold-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\opensans-semibolditalic-demo.html" />
+    <Content Include="cuentas\static\fonts\conv\opensans-semibolditalic-webfont.ttf" />
+    <Content Include="cuentas\static\fonts\conv\opensans-semibolditalic-webfont.woff" />
+    <Content Include="cuentas\static\fonts\conv\opensans-semibolditalic-webfont.woff2" />
+    <Content Include="cuentas\static\fonts\conv\specimen_files\grid_12-825-55-15.css" />
+    <Content Include="cuentas\static\fonts\conv\specimen_files\specimen_stylesheet.css" />
+    <Content Include="cuentas\static\fonts\conv\stylesheet.css" />
+    <Content Include="cuentas\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="cuentas\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="cuentas\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="cuentas\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="cuentas\static\scripts\bootstrap.js" />
+    <Content Include="cuentas\static\scripts\bootstrap.min.js" />
+    <None Include="cuentas\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="cuentas\static\scripts\jquery-1.10.2.js" />
+    <Content Include="cuentas\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="cuentas\static\scripts\jquery-1.10.2.min.map" />
+    <None Include="cuentas\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="cuentas\static\scripts\jquery.validate.js" />
+    <Content Include="cuentas\static\scripts\jquery.validate.min.js" />
+    <Content Include="cuentas\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="cuentas\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="cuentas\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="cuentas\static\scripts\respond.js" />
+    <Content Include="cuentas\static\scripts\respond.min.js" />
+    <None Include="cuentas\static\scripts\_references.js" />
+    <Content Include="cuentas\templates\base.html" />
+    <Content Include="cuentas\templates\change_password.html" />
+    <Content Include="cuentas\templates\confirmacion.html" />
+    <Content Include="cuentas\templates\consulta_deudas.html" />
+    <Content Include="cuentas\templates\consulta_ultimos.html" />
+    <Content Include="cuentas\templates\cuenta_corriente.html" />
+    <Content Include="cuentas\templates\detalle_ctacte.html" />
+    <Content Include="cuentas\templates\home.html" />
+    <Content Include="cuentas\templates\login.html" />
+    <Content Include="cuentas\templates\menu_ctacte.html" />
+    <Content Include="cuentas\templates\menu_usr.html" />
+    <Content Include="cuentas\templates\user.html" />
+    <Content Include="cuentas\templates\confirmacion-ctacte.html" />
+    <Content Include="cuentas\templates\userUD.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cuentas\" />
+    <Folder Include="cuentas\migrations\" />
+    <Folder Include="cuentas\static\" />
+    <Folder Include="cuentas\static\content\" />
+    <Folder Include="cuentas\static\fonts\" />
+    <Folder Include="cuentas\static\fonts\conv\" />
+    <Folder Include="cuentas\static\fonts\conv\specimen_files\" />
+    <Folder Include="cuentas\static\scripts\" />
+    <Folder Include="cuentas\templates\" />
+    <Folder Include="Proy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

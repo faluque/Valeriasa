@@ -1,0 +1,16 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h1>Deudas</h1>
+<ul>
+    {% if deudas %}
+    {% for cc in deudas %}
+    <li>
+    {{ cc.detalle }} | {{cc.fecha}} | {{cc.saldo}}
+    <a href="{% url "ctacte_detalle" pk=cc.pk %}"> Detalle</a>|
+    </li>
+    {% endfor %}
+    {% else %}
+    No hay deudas pendientes
+    {%endif%}
+</ul>
+{% endblock %}

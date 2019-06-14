@@ -1,0 +1,14 @@
+﻿{% extends "base.html" %}
+{% block content %}
+{% if es_cliente %}
+<h1>Hola Cliente!</h1>
+    <li><a href="{% url "consulta_deuda" %}">Consultar Saldos Pendientes</a></li>
+    <li><a href="{% url "consulta_ultimos" %}">Consultar Ultimos Movimientos</a></li>
+{% else %}
+<h1>Hola Admin</h1>
+<ul>
+    <li><a href="{% url "menu_usr"%}">Menu Clientes</a></li>
+    <li><a href="{% url "menu_ctacte"%}">Menu Cuentas Corrientes</a></li>
+</ul>
+{% endif %}
+{% endblock %}

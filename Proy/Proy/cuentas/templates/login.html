@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValeriaSA</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'content/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'content/site.css' %}" />
+    <script src="{% static 'scripts/modernizr-2.6.2.js' %}"></script>
+</head>
+<body>
+    {% if user.is_authenticated %}
+    <META HTTP-EQUIV="REFRESH" CONTENT="0;URL=home">
+
+    {% else %}
+    <div class="centrado">
+    <h1>Iniciar Sesi&oacute;n</h1>
+    <hr />
+ 
+            <form action="." method="post" >
+                {% csrf_token %}
+                
+                <table cellpadding="10" cellspacing="3">
+                <tr>
+                    <td>Usuario:</td>
+                    <td>
+                        {{ form.username }}
+                    </td>
+                </tr>
+                <tr >
+                    <td>Contrase&ntilde;a:</td>
+                    <td >
+                        {{ form.password }}
+                    </td>
+                </tr>
+                </table>
+                
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="hidden" name="next" value="/" />
+                        <input type="submit" value="Entrar" class="boton" />
+                    </div>
+                </div>
+                {% if form.errors %}
+                <p class="validation-summary-errors">Por favor ingrese usuario y/o contrase&ntilde;a v&aacute;lidos.</p>
+                {% endif %}
+            </form>
+        
+    </div>
+
+
+    {% endif %}
+
+ <script src="{% static 'scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'scripts/respond.js' %}"></script>
+    <script src="{% static 'scripts/jquery.validate.min.js' %}"></script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

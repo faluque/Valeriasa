@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+ <title>Proyecto</title>
+</head>
+<body>
+    {% block header %}
+    <ul>
+    {% if request.user.is_authenticated %}
+        <li><a href="{% url "logout" %}"> Logout</a></li>
+        {% block logged_in_nav %} {% endblock %}
+        
+    </ul> 
+{% else %}
+    <META HTTP-EQUIV="REFRESH" CONTENT="0;URL=login">
+ {% endif %}
+
+{% endblock %}
+ {% block content %}
+ {% endblock %}
+</body>
+</html>

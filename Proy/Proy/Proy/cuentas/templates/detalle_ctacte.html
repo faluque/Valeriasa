@@ -1,0 +1,14 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h3>Nombre de Usuario: {{ object.inquilino }}</h3>
+<p>Id: {{object.pk}}</p>
+<p>Detalle: {{ object.detalle }}</p>
+<p>Importe: {{ object.importe }}</p>
+<p>Fecha: {{ object.fecha }}</p>
+<p>Concepto: {{ object.concepto }}</p>
+<p>Saldo: {{ object.saldo }}</p>
+<p>Factura: {{ object.factura }}</p>
+<p>Sociedad: {{ object.sociedad }}</p>
+{% endblock %}
+
+ 

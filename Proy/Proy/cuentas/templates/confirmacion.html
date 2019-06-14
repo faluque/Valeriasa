@@ -1,0 +1,8 @@
+﻿{% extends "base.html" %}
+{% block content %}
+
+<form action="" method="post">{% csrf_token %}
+    <p>Estas seguro que quieres eliminar al usuario "{{ object.username }}"?</p>
+    <input type="submit" value="Confirmar" />
+</form>
+{% endblock %}

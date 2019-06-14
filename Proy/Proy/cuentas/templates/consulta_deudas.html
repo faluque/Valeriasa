@@ -1,0 +1,21 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h3>Saldos Pendientes</h3>
+<hr />
+<table cellpadding="5" cellspacing="3">
+    {% if deudas %}
+    <tr>
+        <th>Fecha</th><th>Descripci&oacute;n</th><th>Importe</th><th>Saldo</th>
+    </tr>
+    {% for cc in deudas %}
+    <tr>
+    <td>{{cc.fecha}}</td> <td>{{cc.detalle}}</td> <td>{{cc.importe}} </td> <td>{{cc.saldo}} </td> 
+    </tr>
+    {% endfor %}
+    {% else %}
+    No hay deudas pendientes
+    {%endif%}
+</table>
+<br />
+<input type="button" value="Volver" onclick="history.back()" class="boton">
+{% endblock %}

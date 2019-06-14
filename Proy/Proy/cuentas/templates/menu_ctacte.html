@@ -1,0 +1,25 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h3>Menu Cuentas Corrientes</h3>
+<hr />
+    <li><a href="{% url "nuevo_movimiento"%}">Crear nuevo Movimiento</a></li>
+<h3>Listado</h3>
+<hr />
+<table cellpadding="5" cellspacing="3">
+
+    <tr>
+        <th>Inquilino</th><th>Descripci&oacute;n</th><th>Fecha</th><th>Detalle</th><th>Modificar</th><th>Eliminar</th>
+    </tr>
+    {% for cc in ctactes %}
+    <tr>
+    <td>{{cc.nro_inquilino}}</td><td>{{ cc.detalle }}</td><td> {{cc.fecha}} </td>
+    <td style="text-align: center;"><a href="{% url "ctacte_detalle" pk=cc.pk %}"> – </a></td>
+    <td style="text-align: center;"><a href="{% url "ctacte_update" pk=cc.pk %}">– </a></td>
+        <td style="text-align: center;"><a href="{% url "ctacte_delete" pk=cc.pk %}"> – </a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br />
+<input type="button" value="Volver" onclick="history.back()" class="boton">
+{% endblock %}

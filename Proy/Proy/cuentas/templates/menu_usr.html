@@ -1,0 +1,23 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h3>Menu Clientes</h3>
+<hr />
+<ul>
+    <li><a href="{% url "user_registration"%}">Crear nuevo Cliente</a></li>
+</ul>
+<h3>Listado</h3>
+<hr />
+<table cellpadding="5" cellspacing="3">
+   
+    {% for usr in usuarios %}
+    <tr>
+        <td>{{usr.username}} </td>
+        <td><a href="{% url "user_update" pk=usr.pk %}">Modificar</a> </td>
+        <td><a href="{% url "user_delete" pk=usr.pk %}"> Eliminar </a> </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br />
+<input type="button" value="Volver" onclick="history.back()" class="boton">
+{% endblock %}

@@ -1,0 +1,14 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<h1>Ultimos Movimientos</h1>
+<ul>
+
+    {% for cc in ultimos %}
+    <li>
+    {{ cc.detalle }} | {{cc.fecha}} | {{cc.saldo}}
+    <a href="{% url "ctacte_detalle" pk=cc.pk %}"> Detalle</a>|
+    </li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
