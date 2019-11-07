@@ -64,6 +64,14 @@ WSGI_APPLICATION = 'Proy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'thebardstale$valeriasa',
+        'USER': 'thebardstale',
+        'PASSWORD': '5RL*r9%ynfB#',
+        'HOST': 'thebardstale.mysql.pythonanywhere-services.com',
+        'PORT':'3306'
+    },
+    'localhost': {
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'valeriasa',
         'USER': 'fluque',
         'PASSWORD': '3&2HAe0ogzgy',
